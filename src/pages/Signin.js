@@ -21,7 +21,7 @@ const Signin = () => {
       <InputBox placeholder={'Enter your email'} setValue={setEmail} />
       <Text style={styles.txt}>Password</Text>
       <InputBox placeholder={'Enter your password'} setValue={setPassword} />
-      <Pressable>
+      <Pressable onPress={() => navigation.navigate('ForgotPassword')}>
         <Text style={{textAlign: 'right', marginRight: 10}}>
           Forgot password
         </Text>
