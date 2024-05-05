@@ -6,6 +6,7 @@ const InputBox = ({text, placeholder, setValue}) => {
     <View style={{margin: 10}}>
       <TextInput
         placeholder={placeholder}
+        onChangeText={text => setValue(text)}
         style={{
           borderWidth: 1,
           borderColor: '#c4c4c4',
